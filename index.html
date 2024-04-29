@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <style>
+    .img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 10%;
+    }
+
+    h1 {
+      text-decoration: underline;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 36px;
+      color: rgb(36, 126, 230);
+      display: flex;
+      justify-content: center;
+    }
+
+    h3 {
+      font-family: sans-serif;
+      font-size: 26px;
+      text-decoration: underline;
+    }
+
+    body {
+      background-repeat: no-repeat;
+      background-size: cover cover;
+      font-family: sans-serif;
+      font-size: 18px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .split {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      padding: 0;
+      width: 60%;
+      margin: 0 auto;
+      height: 100vh;
+    }
+
+    .right {
+      flex: 1;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 40px;
+      margin-top: 0px;
+      overflow-y: auto;
+      scrollbar-width: thin;
+      scrollbar-color: black;
+      width: 75%;
+    }
+
+    .left {
+      background-color: black;
+      padding-left: 20px;
+      padding-right: 20px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 25%;
+    }
+
+    .centered img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+
+    .left-content {
+      padding: 20px;
+    }
+
+    .right ul {
+  list-style-type: none;
+}
+
+.right ul li {
+  position: relative;
+  padding-left: 20px; 
+}
+
+.right ul li::before {
+  content: "\25B6 ";
+  position: absolute;
+  left: 0;
+}
+
+  </style>
+</head>
+
+<body background="background.jpg">
+  <div class="split">
+    <div class="right">
+      <div class="centered">
+        <h1>
+          <u>MY PROFILE</u>
+        </h1>
+        <img src="photo.jpg" alt="Image" class="img">
+        <br>
+        <h3>Overview</h3>
+        <p>Fullstack web developer with specialization in developing high-quality websites.</p>
+        <h3>Basic Details</h3>
+        <p>Name : Shrujan S Shetty</p>
+        <p>Roll no : NNM22CS174</p>
+        <p>Email : nnm22cs174@nmamit.in</p>
+        <p>Address : Kollanguli House, Nitte Post,Karkala tq,Udupi ,574110</p>
+
+        <h3>Education</h3>
+        <ul>
+          <li>
+            <h4>Primary Education</h4>
+            <p>NSAM Eng Med High School, Nitte</p>
+            <p>574110</p>
+          </li>
+          <li>
+            <h4>Secondary Education</h4>
+            <p>PCMC</p>
+            <p>Karkala Jnanasudha PU College, Ganit Nagar,</p>
+            <p>573424</p>
+          </li>
+          <li>
+            <h4>College</h4>
+            <p>Computer Science Engineering</p>
+            <p>NMAMIT Nitte,</p>
+            <p>574110</p>
+          </li>
+        </ul>
+        <h3>Projects</h3>
+        <ul>
+          <li>
+            <h4>Team Earth</h4>
+            <p>An interactive website for crowd-funding towards protecting the environment.</p>
+          </li>
+          <li>
+            <h4>Github read-me generator</h4>
+            <p>Generate attractive read-me for your GitHub profile.</p>
+          </li>
+          <li>
+            <h4>Truth Tracker Hub</h4>
+            <p>A simple website for detecting fake news and spreading awareness about them.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="left">
+      <div class="centered left-content">
+        <h3>Skills</h3>
+        <ul>
+          <li>Front-end web dev</li>
+          <li>Back-end web dev</li>
+          <li>Database Management</li>
+        </ul>
+        <h3>Languages</h3>
+        <ul>
+          <li>Javascript</li>
+          <li>PHP</li>
+          <li>SQL</li>
+          <li>C</li>
+          <li>Java</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
